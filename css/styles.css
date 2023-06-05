@@ -123,7 +123,7 @@ td {
 
 .navigation-list__item--active {
 
-  right: 0px;
+  right: 0;
   transform: translateX(-10px);
 }
 
