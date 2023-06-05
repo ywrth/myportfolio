@@ -1,0 +1,369 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
+header {
+  font-weight: 1000;
+}
+
+body {
+  background-color: #CFBDDF;
+  font-family: 'Wix Madefor Display', sans-serif;
+  font-weight: 120;
+  color: rgb(71, 55, 180);
+}
+
+h1 {
+  font-size: "24px";
+  line-height: 1.5;
+  font-style: bold;
+  font-weight: 700;
+  text-align: center;
+
+
+}
+/* won't change */
+h2 {
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+
+
+a {
+  color: #2416ea;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+a:visited {
+  color: #0d2090;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #d7097d;
+}
+
+a:active {
+  color: #489c79;
+  background-color: yellow;
+  display: inline-block;
+}
+
+
+button,
+.submit-button,
+.button {
+  border: none;
+  font-family: inherit;
+  background-color: rgb(169, 233, 57);
+  font-style: rgb(251, 250, 250);
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  border-bottom: 2px solid rgba(77, 110, 202, 0.641);
+  -webkit-transition: .42s opacity;
+  transition: .42s opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+button:hover,
+button:focus,
+.submit-button:hover,
+.submit-button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: .8;
+  font-size: 18px;
+}
+
+
+table,
+th,
+td {
+  border: 1px solid;
+
+}
+
+.profile__portrait {
+  float: left;
+}
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100px;
+          flex: 0 1 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+  margin: 20px;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.navigation-list__item--active {
+
+  right: 0px;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.page-footer {
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.profile__portrait {
+  float: left;
+  width: auto;
+  height: auto;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.grid__item {
+  background-color: #BFBEFF;
+  color: black;
+  text-align: center;
+  width: auto;
+  min-height: auto;
+  margin: auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 0.5px darkgray;
+          box-shadow: 2px 2px 0.5px darkgray;
+  padding: 10px;
+  border: 1px solid black;
+  text-shadow: darkgray;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+.grid__item:last-child {
+  -ms-grid-column: 3;
+  grid-column: 3 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  word-wrap: normal;
+
+}
+
+.table-skills {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-me__item {
+  font-stretch: expanded;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* media all help to display content properly on different devices*/
+
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: smaller;
+  }
+
+  h2 {
+    font-size: smaller;
+  }
+}
+
+/*animation*/
+
+@-webkit-keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px);
+  }
+
+  to {
+    -webkit-transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+          animation: 30s cloud-move infinite alternate linear;
+}
+
+.berlin-illustration {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.horses {
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes horses {
+  from {
+    fill: #37a699;
+  }
+
+  to {
+    fill: #f76414;
+  }
+}
+
+@keyframes horses {
+  from {
+    fill: #37a699;
+  }
+
+  to {
+    fill: #f76414;
+  }
+}
