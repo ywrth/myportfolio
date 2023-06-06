@@ -260,11 +260,19 @@ td {
     right: 0;
     top: 0;
     display:inline-table;
+    padding-left:100%;
+    margin-right: 20%;
   }
 
 .profile {
  margin-right: 5%;
  display:grid;
+}
+
+.page-footer {
+  position:relative;
+  margin-top: 30%;
+
 }
 
 .about-me {
