@@ -36,7 +36,9 @@ h3 {
   line-height: 1.2;
 }
 
-
+p {
+  font-style: italic;
+}
 
 a {
   color: #2416ea;
