@@ -5,28 +5,24 @@
 * Browsers: last 2 version
 */
 
-header {
-  font-weight: 1000;
-}
 
 body {
   background-color: #CFBDDF;
   font-family: 'Wix Madefor Display', sans-serif;
-  font-weight: 120;
   color: rgb(71, 55, 180);
 }
 
 h1 {
-  font-size: "24px";
+  font-size: 20px;
   line-height: 1.5;
-  font-weight: 700;
+  font-weight: bold;
   text-align: center;
-
-
 }
+
 /* won't change */
 h2 {
-  font-size: 22px;
+  font-size: 1.5em;
+  font-weight:600;
   line-height: 1.5;
   font-weight: bold;
 }
@@ -36,7 +32,9 @@ h3 {
   line-height: 1.2;
 }
 
-
+p {
+  font-style: italic;
+}
 
 a {
   color: #2416ea;
@@ -150,12 +148,19 @@ td {
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+  display:flow-root;
+  -webkit-box-orient:inline-axis;
+  -webkit-box-direction:normal;
+      -ms-flex-direction:row;
           flex-direction: column;
   text-align: center;
+
+}
+.social-media {
+  position:absolute;
+  bottom: 10%;
+  width: 100%;
+  height: 60px;   
 }
 
 .profile__portrait {
@@ -178,7 +183,7 @@ td {
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-  margin: 20px;
+  margin: 150px;
 }
 
 .grid__item {
@@ -222,22 +227,22 @@ td {
 
 }
 
+.about-me__item {
+  font-stretch: expanded;
+}
+
+
 .table-skills {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.about-me__item {
-  font-stretch: expanded;
-}
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
-/* media all help to display content properly on different devices*/
 
 @media all and (max-width: 500px) {
   .grid {
@@ -255,20 +260,12 @@ td {
 
 @media all and (max-width: 750px) {
   .grid {
-    grid-gap: 10px;
+    grid-gap: 50px;
   }
 
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: smaller;
-  }
-
-  h2 {
-    font-size: smaller;
   }
 }
 
