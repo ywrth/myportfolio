@@ -22,7 +22,7 @@ h1 {
 /* won't change */
 h2 {
   font-size: 1.5em;
-  font-weight:600;
+  font-weight: 600;
   line-height: 1.5;
   font-weight: bold;
 }
@@ -108,16 +108,16 @@ td {
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 100px;
-          flex: 0 1 100px;
+  -ms-flex: 0 1 100px;
+  flex: 0 1 100px;
   width: 100px;
   height: 100px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
   margin: 20px;
 }
@@ -127,11 +127,11 @@ td {
 }
 
 .navigation-list li {
-  display:inline;
+  display: inline;
   margin-left: 15px;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -141,26 +141,27 @@ td {
 
   right: 0px;
   -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
+  transform: translateX(-10px);
 }
 
 .page-footer {
   clear: both;
   display: -webkit-box;
   display: -ms-flexbox;
-  display:flow-root;
-  -webkit-box-orient:inline-axis;
-  -webkit-box-direction:normal;
-      -ms-flex-direction:row;
-          flex-direction: column;
+  display: flow-root;
+  -webkit-box-orient: inline-axis;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: column;
   text-align: center;
 
 }
+
 .social-media {
-  position:absolute;
-  bottom: 10%;
+  position: fixed;
+  bottom: 100px;
   width: 100%;
-  height: 60px;   
+  height: 60px;
 }
 
 .profile__portrait {
@@ -179,7 +180,7 @@ td {
 
 .quote {
   font-weight: bold;
-  font-style:italic;
+  font-style: italic;
 }
 
 .grid {
@@ -200,13 +201,13 @@ td {
   margin: auto;
   border-radius: 5px;
   -webkit-box-shadow: 2px 2px 0.5px darkgray;
-          box-shadow: 2px 2px 0.5px darkgray;
+  box-shadow: 2px 2px 0.5px darkgray;
   padding: 10px;
   border: 1px solid black;
   text-shadow: darkgray;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 
 }
 
@@ -225,8 +226,8 @@ td {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   text-align: center;
   word-wrap: normal;
 
@@ -245,7 +246,7 @@ td {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* media all help to display content properly on different devices*/
@@ -255,28 +256,30 @@ td {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
-  .main-navigation {position: relative;
+
+  .main-navigation {
+    position: relative;
     position: absolute;
     right: 0;
     top: 0;
-    display:inline-table;
-    padding-left:100%;
+    display: inline-table;
+    padding-left: 100%;
     margin-right: 20%;
   }
 
-.profile {
- margin-right: 5%;
- display:grid;
-}
+  .profile {
+    margin-right: 5%;
+    display: grid;
+  }
 
-.page-footer {
-  position:relative;
-  margin-top: 30%;
+  .page-footer {
+    position: relative;
+    margin-top: 30%;
 
-}
+  }
 
-.about-me {
- display:grid;
+  .about-me {
+    display: grid;
   }
 }
 
@@ -293,7 +296,7 @@ td {
   }
 
   .grid__item {
-    margin-top:20%
+    margin-top: 20%
   }
 
   .grid__item:last-child {
@@ -334,36 +337,36 @@ td {
 
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
   -webkit-animation: 30s cloud-move infinite alternate linear;
-          animation: 30s cloud-move infinite alternate linear;
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 .berlin-illustration {
@@ -374,7 +377,7 @@ td {
 
 .horses {
   -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
 
 @-webkit-keyframes horses {
