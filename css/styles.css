@@ -1,16 +1,15 @@
 header {
-  font-weight: 1000;
+  font-weight: 100;
 }
 
 body {
   background-color: #CFBDDF;
   font-family: 'Wix Madefor Display', sans-serif;
-  font-weight: 120;
   color: rgb(71, 55, 180);
 }
 
 h1 {
-  font-size: "24px";
+  font-size: 24px;
   line-height: 1.5;
   font-style: bold;
   font-weight: 700;
@@ -20,7 +19,7 @@ h1 {
 }
 /* won't change */
 h2 {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.5;
   font-weight: bold;
 }
@@ -77,7 +76,6 @@ button:focus,
 .button:focus {
   cursor: pointer;
   opacity: .8;
-  font-size: 18px;
 }
 
 
@@ -221,14 +219,6 @@ td {
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
-
-  h1 {
-    font-size: smaller;
-  }
-
-  h2 {
-    font-size: smaller;
   }
 }
 
