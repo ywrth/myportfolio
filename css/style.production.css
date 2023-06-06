@@ -269,6 +269,7 @@ td {
 
   .profile {
     margin-right: 5%;
+    display: -ms-grid;
     display: grid;
   }
 
@@ -279,6 +280,7 @@ td {
   }
 
   .about-me {
+    display: -ms-grid;
     display: grid;
   }
 }
@@ -367,35 +369,4 @@ td {
 .cloud-front {
   -webkit-animation: 30s cloud-move infinite alternate linear;
   animation: 30s cloud-move infinite alternate linear;
-}
-
-.berlin-illustration {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.horses {
-  -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
-}
-
-@-webkit-keyframes horses {
-  from {
-    fill: #37a699;
-  }
-
-  to {
-    fill: #f76414;
-  }
-}
-
-@keyframes horses {
-  from {
-    fill: #37a699;
-  }
-
-  to {
-    fill: #f76414;
-  }
 }
