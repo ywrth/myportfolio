@@ -65,7 +65,7 @@ button,
   border: none;
   font-family: inherit;
   background-color: rgb(169, 233, 57);
-  font-style: rgb(251, 250, 250);
+  font-style: normal;
   text-decoration: none;
   padding: 5px;
   border-radius: 5px;
@@ -204,7 +204,7 @@ td {
   box-shadow: 2px 2px 0.5px darkgray;
   padding: 10px;
   border: 1px solid black;
-  text-shadow: darkgray;
+  text-shadow: 1px 1px darkgray;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
